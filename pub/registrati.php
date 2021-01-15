@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
         //memorizzo in session la pagina
         $_SESSION['pagePrecedente']="";
         //memorizzo in session il percorso per le immagini
-        $_SESSION['path']="../../img/";
+        $_SESSION['path']="../img/";
         //reindirizzo alla propria pagina profilo
         header("location: ../private/profilo.php");                                                                         
     }
@@ -41,20 +41,32 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrati</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="titolo">
-        <h1 class="titolo">Inizia a riempire la tua Photoboard</h1>
-    </div>
-    <form class="form1" method="post" action="registrati.php">                                                                            <!-- form registrazione -->
-        <h1>Registrati</h1>
-        <p>Username:<br/><input type="text" placeholder="Username" name="username"></p>
-        <p>Email:<br/><input type="email" placeholder="Email" name="email"></p>
-        <p>Password:<br/><input type="password" placeholder="Password" name="password"></p>
-        <p>Reinserisci password:<br/><input type="password" placeholder="Password" name="cPassword"></p>
-        <button type="submit" name="submit">Registrati</button>
+<h1 class="text-center">Inizia a riempire la tua Photoboard</h1>
+<div class="container-md p-5 my-5 border">
+    <form class="form-horizontal" method="post" action="registrati.php">                                                                           <!-- form registrazione -->
+        <h2 class="mb-3">Registrati</h2>
+        <div class="form-group text-center">
+            <input type="text" class="form-control" placeholder="Username" name="username"></p>
+        </div>
+        <div class="form-group text-center">
+            <input type="email" class="form-control" placeholder="Email" name="email"></p>
+        </div>
+        <div class="form-group text-center">
+            <input type="password" class="form-control" placeholder="Password" name="password"></p>
+        </div>
+        <div class="form-group text-center">
+            <input type="password" class="form-control" placeholder=" Conferma password" name="cPassword"></p>
+        </div>
+        <div class="form-group text-center">
+            <button class="btn btn-primary" type="submit" name="submit">Registrati</button>
+        </div>
     </form>
+</div>
 </body>
 
 </html>

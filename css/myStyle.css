@@ -1,0 +1,42 @@
+.main-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.img-avatar {
+    visibility: hidden;
+    position: absolute;
+}
+
+div.gallery {
+    display: inline-table;
+    margin: 50px;
+    border: 1px solid #ccc;
+    width: 250px;
+    position: relative;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 150px;
+}
+
+div.text {
+    padding: 15px;
+    text-align: center;
+}
+
+.profileCanvas {
+    width: 600px;
+    height: 300px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
