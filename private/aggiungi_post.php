@@ -21,7 +21,7 @@ if(isset($_POST['pubblica'])) {
     $idUtente = $con->real_escape_string($_SESSION['id']);
 
     //query inserimento post
-    $sql = "INSERT INTO post (text, tag, img, fk_utente) VALUES ('$text', '$tag', '$img', '$idUtente')";                                    
+    $sql = "INSERT INTO post(text,tag,img,fk_utente) VALUES ('$text', '$tag', '$img', '$idUtente')";                                    
     $con->query($sql);
     
     if(move_uploaded_file($_FILES['image']['tmp_name'], $percorso)) {                                            

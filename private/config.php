@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$user = 'root';
-$password = 'password.123';
-$nomedb = 'myphotoboard';
+$user = 'root';    //myphotoboard
+$password = 'password.123'; //deploy: Fraserver02_ciao
+$nomedb = 'db_photoboard';
 ?>
